@@ -5,7 +5,6 @@ channels:
 dependencies:
   - _libgcc_mutex=0.1=main
   - _openmp_mutex=5.1=1_gnu
-  - _py-xgboost-mutex=2.0=gpu_0
   - alabaster=1.0.0=pyhd8ed1ab_1
   - asttokens=3.0.0=py311h06a4308_0
   - aws-c-auth=0.7.22=h96bc93b_2
@@ -127,7 +126,6 @@ dependencies:
   - libiconv=1.18=h4ce23a2_1
   - libkml=1.3.0=h096b73e_7
   - liblapack=3.9.0=31_h7ac8fdf_openblas
-  - liblightgbm=4.6.0=cuda_h3896ea8_1
   - libllvm14=14.0.6=hecde1de_4
   - libnetcdf=4.8.1=h14805e7_4
   - libnghttp2=1.57.0=h2d74bed_0
@@ -148,13 +146,11 @@ dependencies:
   - libuuid=1.41.5=h5eee18b_0
   - libwebp-base=1.5.0=h851e524_0
   - libxcb=1.17.0=h8a09558_0
-  - libxgboost=2.1.4=cuda128_hacb7753_2
   - libxkbcommon=1.9.0=h65c71a3_0
   - libxml2=2.13.7=hfdd30dd_0
   - libxslt=1.1.41=h097e994_0
   - libzip=1.8.0=h6ac8c49_1
   - libzlib=1.2.13=h4ab18f5_6
-  - lightgbm=4.6.0=cuda_py_1
   - lz4-c=1.9.4=h6a678d5_1
   - mapclassify=2.4.3=pyhd3eb1b0_0
   - markdown-it-py=3.0.0=pyhd8ed1ab_1
@@ -199,8 +195,6 @@ dependencies:
   - pthread-stubs=0.4=hb9d3cd8_1002
   - ptyprocess=0.7.0=pyhd3eb1b0_2
   - pure_eval=0.2.2=pyhd3eb1b0_0
-  - py-xgboost=2.1.4=cuda128_pyh71c493a_2
-  - py-xgboost-gpu=2.1.4=pyh68bd8d9_2
   - pyarrow=16.1.0=py311hbd00459_2
   - pyarrow-core=16.1.0=py311hf1d6e26_2_cpu
   - pycparser=2.22=pyh29332c3_1
