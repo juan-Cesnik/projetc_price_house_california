@@ -1,0 +1,8 @@
+streamlit
+geopandas
+pandas
+numpy
+shapely
+joblib
+scikit-learn
+pydeck
