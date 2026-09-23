@@ -9,29 +9,45 @@ Para este projeto, foi utilizado conjunto de dados disponível no Kaggle para o 
 
  [Link do Kaggle](https://https://www.kaggle.com/datasets/camnugent/california-housing-prices)
 
+Este projeto também realizei um deploy no streamlit cloud segue o link: 
+[Link do streamlit.app](https://https://projetcpricehousecalifornia.streamlit.app/)
+
+Porem como é uma pltaforma gratuita pode acontecer de congelar a hospedagem é recomendado rodar nativamente em seu computador,
+Após realizar a instalação das dependencias, entre no terminal:
+
+  ```bash
+    streamlit run .\home.py
+```
+
+
+
 
 ## Organização do projeto
 
 ```
-├── ambiente              <- Arquivo de variáveis de ambiente (não versionar)
+├── ambiente           <- Arquivo de variáveis de ambiente (não versionar)
 ├── .gitignore         <- Arquivos e diretórios a serem ignorados pelo Git
 ├── ambiente.yml       <- O arquivo de requisitos para reproduzir o ambiente de análise
 ├── LICENSE            <- Licença de código aberto se uma for escolhida
 ├── README.md          <- README principal para desenvolvedores que usam este projeto.
+├── packages.txt       <- Arquivo para realizar o deploy no streamlit.
+├── requirements.txt   <- Arquivo para realizar o deploy no streamlit.
+├── runtime.txt        <- Arquivo para realizar o deploy no streamlit.
+├── home.py            <- Arquivo para a estilização e configuração do streamlit.
 |
 ├── dados              <- Arquivos de dados para o projeto.
 |
 ├── modelos            <- Modelos treinados e serializados, previsões de modelos ou resumos de modelos
 |
-├── notebooks          <- Cadernos Jupyter. A convenção de nomenclatura é um número (para ordenação),
-│                         as iniciais do criador e uma descrição curta separada por `-`, por exemplo
-│                         `01-fb-exploracao-inicial-de-dados`.
+├── notebooks          <- Cadernos Jupyter.
 │
 |   └──src             <- Código-fonte para uso neste projeto.
 |      │
 |      ├── __init__.py  <- Torna um módulo Python
 |      ├── config.py    <- Configurações básicas do projeto
 |      └── graficos.py  <- Scripts para criar visualizações exploratórias e orientadas a resultados
+|      └── auxiliares.py  <- Scripts para as funções criadas
+|      └── models.py  <- Scripts para os modelos de ML
 |
 ├── referencias        <- Dicionários de dados, manuais e todos os outros materiais explicativos.
 |
@@ -44,20 +60,18 @@ Para este projeto, foi utilizado conjunto de dados disponível no Kaggle para o 
 1. Faça o clone do repositório que será criado a partir deste modelo.
 
     ```bash
-    git clone ENDERECO_DO_REPOSITORIO
+    git clone git@github.com:juan-Cesnik/projetc_price_house_california.git
     ```
+Lembrando que caso queria colabora faça um fork do meu repositorio para depois realizar o pull request e qualquer coisa me mande um Issuer
 
-2. Crie um ambiente virtual para o seu projeto utilizando o gerenciador de ambientes de sua preferência.
+2. Crie um ambiente virtual para o seu projeto utilizando o `conda`.
 
-    a. Caso esteja utilizando o `conda`, exporte as dependências do ambiente para o arquivo `ambiente.yml`:
+    ```bash
+    conda env create -f ambiente.yml --name coloque_o_nome_da_sua_escolha
+    ```
+## Um pouco mais sobre a base
 
-      ```bash
-      conda env export > ambiente.yml
-      ```
-
-    b. Caso esteja utilizando outro gerenciador de ambientes, exporte as dependências
-    para o arquivo `requirements.txt` ou outro formato de sua preferência. Adicione o
-    arquivo ao controle de versão, removendo o arquivo `ambiente.yml`.
+[Clique aqui](referencias/01_dicionario_de_dados.md) aqui para ver o dicionario de dados da base ultlizada.
 
 Por padrão, o arquivo `.gitignore` já está configurado para ignorar arquivos de dados e
 arquivos de Notebook (para aqueles que usam ferramentas como
