@@ -139,8 +139,8 @@ with coluna1:
 with coluna2:
     view_state = pdk.ViewState(
         #AQui esta dando um erro porque no nosso df quando estavamos otimizando os nossos tipos de dados tem algums tipos de dados que não são compativeis em algumas bibliotecas nesse caso o float32.
-        latitude=float(latitude), #estou convertentando para float64 usando float()
-        longitude=float(longitude),
+        latitude=float(latitude[0]), #estou convertentando para float64 usando float()
+        longitude=float(longitude[0]),
         zoom=5,
         min_zoom=5,
         max_zoom=15,

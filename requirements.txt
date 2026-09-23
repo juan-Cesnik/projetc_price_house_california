@@ -4,3 +4,10 @@ fiona
 geopandas
 pyarrow
 streamlit
+joblib
+pandas
+numpy
+pydeck
+joblib
+scikit-learn
+
