@@ -1,17 +1,19 @@
-# Modelo de projeto de ciência de dados
+# Previsão do Preço de Imóveis na Califórnia com Linear Regression
 
-Modelo de projeto de ciência de dados para ser utilizado como referência em projetos
-futuros. Desenvolvido por mim, [Francisco Bustamante](https://github.com/chicolucio),
-para alunos iniciantes em ciência de dados de meus cursos e mentorias.
+![imagem](./relatorios/imagens/capa.jpg)
 
-Inspiração: [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/)
+O mercado imobiliário é dinâmico e complexo, onde o valor de uma propriedade é influenciado por múltiplos fatores geoespaciais e socioeconômicos. Compreender e prever esses preços de forma precisa é fundamental para tomadas de decisão estratégicas por parte de investidores, compradores e corretores de imóveis.O conjunto de dados California Housing é um dataset clássico da área de aprendizado de máquina, originado a partir de dados do censo de 1990 da Califórnia (Estados Unidos). 
+Ele reúne informações sobre milhares de blocos residenciais do estado, incluindo variáveis como a renda média dos moradores, a idade média dos imóveis, o número de cômodos e a localização geográfica (latitude e longitude). Para este projeto, utilizou-se o algoritmo de Regressão Linear para mapear a relação entre esses indicadores e estimar o valor mediano das casas.
 
-Clique no botão **Use this template** para criar um novo repositório com base neste modelo.
+Para este projeto, foi utilizado conjunto de dados disponível no Kaggle para o ano de 1990.
+
+ [Link do Kaggle](https://https://www.kaggle.com/datasets/camnugent/california-housing-prices)
+
 
 ## Organização do projeto
 
 ```
-├── .env               <- Arquivo de variáveis de ambiente (não versionar)
+├── ambiente              <- Arquivo de variáveis de ambiente (não versionar)
 ├── .gitignore         <- Arquivos e diretórios a serem ignorados pelo Git
 ├── ambiente.yml       <- O arquivo de requisitos para reproduzir o ambiente de análise
 ├── LICENSE            <- Licença de código aberto se uma for escolhida
@@ -57,30 +59,9 @@ Clique no botão **Use this template** para criar um novo repositório com base 
     para o arquivo `requirements.txt` ou outro formato de sua preferência. Adicione o
     arquivo ao controle de versão, removendo o arquivo `ambiente.yml`.
 
-3. Verifique o arquivo `notebooks/01-fb-exemplo.ipynb` para exemplos
-de uso do código.
-4. Renomeie o arquivo `notebooks/01-fb-exemplo.ipynb` para um nome
-mais apropriado ao seu projeto. E siga a convenção de nomenclatura para os demais
-notebooks.
-5. Remova arquivos de exemplo e adicione os arquivos de dados e notebooks do seu
-projeto.
-6. Verifique o arquivo `notebooks/src/config.py` para configurações básicas do projeto.
-Modifique conforme necessário, adicionando ou removendo caminhos de arquivos e
-diretórios.
-7. Atualize o arquivo `referencias/01_dicionario_de_dados.md` com o dicionário de dados
-do seu projeto.
-8. Atualize o `README.md` com informações sobre o seu projeto.
-9. Adicione uma licença ao projeto. Clique
-[aqui](https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
-se precisar de ajuda para escolher uma licença.
-10. Renomeie o arquivo `.env.exemplo` para `.env`
-11. Adicione variáveis de ambiente sensíveis ao arquivo `.env`.
-
 Por padrão, o arquivo `.gitignore` já está configurado para ignorar arquivos de dados e
 arquivos de Notebook (para aqueles que usam ferramentas como
 [Jupytext](https://jupytext.readthedocs.io/en/latest/) e similares). Adicione ou remova
 outros arquivos e diretórios do `.gitignore` conforme necessário. Caso deseje adicionar
 forçadamente um Notebook ao controle de versão, faça um commit forçado com o
 comando `git add --force NOME_DO_ARQUIVO.ipynb`.
-
-Para mais informações sobre como usar Git e GitHub, [clique aqui](https://cienciaprogramada.com.br/2021/09/guia-definitivo-git-github/). Sobre ambientes virtuais, [clique aqui](https://cienciaprogramada.com.br/2020/08/ambiente-virtual-projeto-python/).
